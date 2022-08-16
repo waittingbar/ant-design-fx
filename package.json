@@ -1,10 +1,10 @@
 {
-  "name": "antd",
-  "version": "4.22.5",
-  "description": "An enterprise-class UI design language and React components implementation",
-  "title": "Ant Design",
+  "name": "fx-design",
+  "version": "1.0.0",
+  "description": "基于ant-design定制的飞象UI库",
+  "title": "feiiplat Design",
   "keywords": [
-    "ant",
+    "fx",
     "component",
     "components",
     "design",
@@ -303,7 +303,7 @@
     "react-dom": ">=16.9.0"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "http://nexus.feiiplat.com/repository/npm-hosted/"
   },
   "size-limit": [
     {

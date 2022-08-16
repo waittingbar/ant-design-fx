@@ -130,7 +130,7 @@ export function getLocalizedPathname(
     // to enUS
     fullPath = /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
   } else if (pathname === '/') {
-    fullPath = '/index-cn';
+    fullPath = '/components/overview-cn/';
   } else if (pathname.endsWith('/')) {
     fullPath = pathname.replace(/\/$/, '-cn/');
   } else {

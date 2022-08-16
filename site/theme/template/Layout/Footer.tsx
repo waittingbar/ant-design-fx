@@ -311,20 +311,21 @@ const Footer: React.FC<WrappedComponentProps & { location: any }> = props => {
     return [col1, col2, col3, col4];
   }, [intl.locale, location.query]);
 
-  return (
-    <RcFooter
-      columns={getColumns}
-      bottom={
-        <>
-          Made with <span style={{ color: '#fff' }}>❤</span> by
-          {/* eslint-disable-next-line react/jsx-curly-brace-presence */}{' '}
-          <a target="_blank" rel="noopener noreferrer" href="https://xtech.antfin.com">
-            <FormattedMessage id="app.footer.company" />
-          </a>
-        </>
-      }
-    />
-  );
+  // return (
+  //   <RcFooter
+  //     columns={getColumns}
+  //     bottom={
+  //       <>
+  //         Made with <span style={{ color: '#fff' }}>❤</span> by
+  //         {/* eslint-disable-next-line react/jsx-curly-brace-presence */}{' '}
+  //         <a target="_blank" rel="noopener noreferrer" href="https://xtech.antfin.com">
+  //           <FormattedMessage id="app.footer.company" />
+  //         </a>
+  //       </>
+  //     }
+  //   />
+  // );
+  return <div />;
 };
 
 export default injectIntl(Footer);

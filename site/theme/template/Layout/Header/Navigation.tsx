@@ -84,22 +84,22 @@ export default ({
   }
 
   const items: MenuProps['items'] = [
-    {
-      label: (
-        <Link to={utils.getLocalizedPathname('/docs/spec/introduce', isZhCN, location.query)}>
-          <FormattedMessage id="app.header.menu.spec" />
-        </Link>
-      ),
-      key: 'docs/spec',
-    },
-    {
-      label: (
-        <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN, location.query)}>
-          <FormattedMessage id="app.header.menu.documentation" />
-        </Link>
-      ),
-      key: 'docs/react',
-    },
+    // {
+    //   label: (
+    //     <Link to={utils.getLocalizedPathname('/docs/spec/introduce', isZhCN, location.query)}>
+    //       <FormattedMessage id="app.header.menu.spec" />
+    //     </Link>
+    //   ),
+    //   key: 'docs/spec',
+    // },
+    // {
+    //   label: (
+    //     <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN, location.query)}>
+    //       <FormattedMessage id="app.header.menu.documentation" />
+    //     </Link>
+    //   ),
+    //   key: 'docs/react',
+    // },
     {
       label: (
         <Link to={utils.getLocalizedPathname('/components/overview/', isZhCN, location.query)}>
@@ -108,60 +108,60 @@ export default ({
       ),
       key: 'components',
     },
-    {
-      label: (
-        <Link to={utils.getLocalizedPathname('/docs/resources', isZhCN, location.query)}>
-          <FormattedMessage id="app.header.menu.resource" />
-        </Link>
-      ),
-      key: 'docs/resources',
-    },
-    showTechUIButton
-      ? {
-          label: (
-            <a href="https://techui.alipay.com" target="__blank" rel="noopener noreferrer">
-              TechUI
-            </a>
-          ),
-          key: 'tech-ui',
-        }
-      : null,
-    isZhCN &&
-    typeof window !== 'undefined' &&
-    window.location.host !== 'ant-design.antgroup.com' &&
-    window.location.host !== 'ant-design.gitee.io'
-      ? {
-          label: '国内镜像',
-          key: 'mirror',
-          children: [
-            {
-              label: <a href="https://ant-design.antgroup.com">官方镜像</a>,
-              icon: (
-                <img
-                  alt="logo"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
-                  width={16}
-                  style={{ verticalAlign: 'text-bottom' }}
-                />
-              ),
-              key: 'antgroup',
-            },
-            {
-              label: <a href="https://ant-design.gitee.io">Gitee 镜像</a>,
-              icon: (
-                <img
-                  alt="gitee"
-                  src="https://gw.alipayobjects.com/zos/bmw-prod/9e91e124-9bab-4113-b500-301412f6b370.svg"
-                  width={16}
-                  style={{ verticalAlign: 'text-bottom' }}
-                />
-              ),
-              key: 'gitee',
-            },
-          ],
-        }
-      : null,
-    ...(additional ?? []),
+    // {
+    //   label: (
+    //     <Link to={utils.getLocalizedPathname('/docs/resources', isZhCN, location.query)}>
+    //       <FormattedMessage id="app.header.menu.resource" />
+    //     </Link>
+    //   ),
+    //   key: 'docs/resources',
+    // },
+    // showTechUIButton
+    //   ? {
+    //       label: (
+    //         <a href="https://techui.alipay.com" target="__blank" rel="noopener noreferrer">
+    //           TechUI
+    //         </a>
+    //       ),
+    //       key: 'tech-ui',
+    //     }
+    //   : null,
+    // isZhCN &&
+    // typeof window !== 'undefined' &&
+    // window.location.host !== 'ant-design.antgroup.com' &&
+    // window.location.host !== 'ant-design.gitee.io'
+    //   ? {
+    //       label: '国内镜像',
+    //       key: 'mirror',
+    //       children: [
+    //         {
+    //           label: <a href="https://ant-design.antgroup.com">官方镜像</a>,
+    //           icon: (
+    //             <img
+    //               alt="logo"
+    //               src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+    //               width={16}
+    //               style={{ verticalAlign: 'text-bottom' }}
+    //             />
+    //           ),
+    //           key: 'antgroup',
+    //         },
+    //         {
+    //           label: <a href="https://ant-design.gitee.io">Gitee 镜像</a>,
+    //           icon: (
+    //             <img
+    //               alt="gitee"
+    //               src="https://gw.alipayobjects.com/zos/bmw-prod/9e91e124-9bab-4113-b500-301412f6b370.svg"
+    //               width={16}
+    //               style={{ verticalAlign: 'text-bottom' }}
+    //             />
+    //           ),
+    //           key: 'gitee',
+    //         },
+    //       ],
+    //     }
+    //   : null,
+    // ...(additional ?? []),
   ];
 
   return (

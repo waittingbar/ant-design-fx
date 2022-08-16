@@ -343,30 +343,31 @@ class MainContent extends Component {
       intl: { formatMessage },
     } = this.props;
     return (
-      <ContributorsList
-        className="contributors-list"
-        fileName={meta.filename}
-        renderItem={(item, loading) =>
-          loading ? (
-            <Avatar style={{ opacity: 0.3 }} />
-          ) : (
-            <Tooltip
-              title={`${formatMessage({ id: 'app.content.contributors' })}: ${item.username}`}
-              key={item.username}
-            >
-              <a
-                href={`https://github.com/${item.username}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Avatar src={item.url}>{item.username}</Avatar>
-              </a>
-            </Tooltip>
-          )
-        }
-        repo="ant-design"
-        owner="ant-design"
-      />
+      <div />
+      //   <ContributorsList
+      //     className="contributors-list"
+      //     fileName={meta.filename}
+      //     renderItem={(item, loading) =>
+      //       loading ? (
+      //         <Avatar style={{ opacity: 0.3 }} />
+      //       ) : (
+      //         <Tooltip
+      //           title={`${formatMessage({ id: 'app.content.contributors' })}: ${item.username}`}
+      //           key={item.username}
+      //         >
+      //           <a
+      //             href={`https://github.com/${item.username}`}
+      //             target="_blank"
+      //             rel="noopener noreferrer"
+      //           >
+      //             <Avatar src={item.url}>{item.username}</Avatar>
+      //           </a>
+      //         </Tooltip>
+      //       )
+      //     }
+      //     repo="ant-design"
+      //     owner="ant-design"
+      //   />
     );
   }
 
