@@ -1,4 +1,4 @@
----
+<!-- ---
 order: 6
 title: Change Log
 toc: false
@@ -3183,4 +3183,4 @@ Visit [GitHub](https://github.com/ant-design/ant-design/blob/2.x-stable/CHANGELO
 
 ## 1.11.4
 
-Visit [GitHub](https://github.com/ant-design/ant-design/blob/1.x-stable/CHANGELOG.md) to read change logs from `0.x` to `1.x`.
+Visit [GitHub](https://github.com/ant-design/ant-design/blob/1.x-stable/CHANGELOG.md) to read change logs from `0.x` to `1.x`. -->

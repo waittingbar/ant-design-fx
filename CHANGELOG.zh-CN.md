@@ -1,4 +1,4 @@
----
+<!-- ---
 order: 6
 title: 更新日志
 toc: false
@@ -3186,4 +3186,4 @@ Ant Design 4.0-rc 发布，发布文档请查看[此处](https://github.com/ant-
 
 ## 1.11.4
 
-去 [GitHub](https://github.com/ant-design/ant-design/blob/1.x-stable/CHANGELOG.md) 查看 `0.x` 到 `1.x` 的 Change Log。
+去 [GitHub](https://github.com/ant-design/ant-design/blob/1.x-stable/CHANGELOG.md) 查看 `0.x` 到 `1.x` 的 Change Log。 -->
