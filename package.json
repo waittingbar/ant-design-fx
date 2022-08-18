@@ -1,6 +1,6 @@
 {
   "name": "fx-design",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "基于ant-design定制的飞象UI库",
   "title": "feiiplat Design",
   "keywords": [
@@ -54,8 +54,8 @@
     "size-limit": "size-limit",
     "check-commit": "node ./scripts/check-commit",
     "check-ts-demo": "node ./scripts/check-ts-demo",
-    "clean": "antd-tools run clean && rm -rf es lib coverage dist report.html",
-    "clean-lockfiles": "rm -rf package-lock.json yarn.lock",
+    "clean": "antd-tools run clean && rmdir es lib coverage dist report.html",
+    "clean-lockfiles": "rmdir package-lock.json yarn.lock",
     "prestart": "npm run version",
     "precompile": "npm run version",
     "pretest": "npm run version",
@@ -303,7 +303,7 @@
     "react-dom": ">=16.9.0"
   },
   "publishConfig": {
-    "registry": "http://nexus.feiiplat.com/repository/npm-hosted/"
+    "registry": "http://nexus.feiiplat.com/repository/npm-private/"
   },
   "size-limit": [
     {
