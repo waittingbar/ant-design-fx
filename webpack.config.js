@@ -44,7 +44,7 @@ function ignoreMomentLocale(webpackConfig) {
 
 function addLocales(webpackConfig) {
   let packageName = 'antd-with-locales';
-  if (webpackConfig.entry['fxd.min']) {
+  if (webpackConfig.entry['antd.min']) {
     packageName += '.min';
   }
   webpackConfig.entry[packageName] = './index-with-locales.js';
@@ -78,7 +78,7 @@ function processWebpackThemeConfig(themeConfig, theme, vars) {
         console.log(chalk.red('🆘 Seems entry has changed! It should be `./index`'));
       }
 
-      config.entry[entryName.replace('fxd', `fxd.${theme}`)] = replacedPath;
+      config.entry[entryName.replace('antd', `antd.${theme}`)] = replacedPath;
       delete config.entry[entryName];
     });
 
@@ -91,10 +91,10 @@ function processWebpackThemeConfig(themeConfig, theme, vars) {
         after: {
           root: './dist',
           include: [
-            `fxd.${theme}.js`,
-            `fxd.${theme}.js.map`,
-            `fxd.${theme}.min.js`,
-            `fxd.${theme}.min.js.map`,
+            `antd.${theme}.js`,
+            `antd.${theme}.js.map`,
+            `antd.${theme}.min.js`,
+            `antd.${theme}.min.js.map`,
           ],
           log: false,
           logWarning: false,
